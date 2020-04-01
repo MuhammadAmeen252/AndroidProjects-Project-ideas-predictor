@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0080ff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/fff"
+        android:gravity="center"
+        android:text="FEEDBACK"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:rating="0"
+        android:numStars="5" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate how was the idea!"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="15sp"
+        >
+
+    </TextView>
+
+
+        <EditText
+            android:id="@+id/tvAskQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:background="@drawable/round_shape"
+            android:hint="please give your feedback here"
+             />
+
+        <EditText
+            android:id="@+id/tvsuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Ask question!"
+            android:background="@drawable/round_shape"
+             />
+
+    <Button
+        android:id="@+id/btfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+
+        android:layout_marginRight="100dp"
+        android:background="@drawable/round_shape"
+        android:padding="5dp"
+        android:text="submit"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>
